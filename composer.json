@@ -1,16 +1,14 @@
 {
-    "name": "niku-solutions/cms",
+    "name": "vanrijs/niku-solutions-cms-laravel-6",
     "description": "A codeable and flexible custom post type manager for Laravel with custom fields. Extendable and as dynamic as you wish.",
     "keywords": [
-        "laravel cms",
-        "laravel post manager",
-        "laravel page manager"
+
     ],
     "license": "MIT",
     "authors": [
         {
-            "name": "Nick Kuijpers",
-            "email": "info@niku-solutions.nl"
+            "name": "Raymond van Rijs",
+            "email": "raymond@ecreatives.nl"
         }
     ],
     "autoload": {
