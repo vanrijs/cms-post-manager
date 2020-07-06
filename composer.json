@@ -1,5 +1,5 @@
 {
-    "name": "vanrijs/niku-solutions-cms-laravel-6",
+    "name": "vanrijs/niku-solutions-cms-laravel-7",
     "description": "A codeable and flexible custom post type manager for Laravel with custom fields. Extendable and as dynamic as you wish.",
     "keywords": [
 
@@ -18,9 +18,9 @@
     },
     "require": {
         "php": "^7.0|^7.1",
-        "illuminate/http": "^5.2|^6.0",
-        "illuminate/auth": "^5.2|^6.0",
-        "illuminate/database": "5.8.*|^6.0",
-        "illuminate/support": "5.8.*|^6.0"
+        "illuminate/http": "^7.0",
+        "illuminate/auth": "^7.0",
+        "illuminate/database": "7.0",
+        "illuminate/support": "7.0"
     }
 }
