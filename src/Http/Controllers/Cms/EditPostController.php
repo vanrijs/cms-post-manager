@@ -100,7 +100,7 @@ class EditPostController extends CmsController
 
 		if(method_exists($postTypeModel, 'on_edit_check')){
 			$onCheck = $postTypeModel->on_edit_check($postTypeModel, $post->id, $postmeta, $request);
-			if($onCheck['continue'] === false){
+			if(!empty($onCheck['continue']) && ( $onCheck['continue'] === false || !$onCheck['continue']) ){
 				$errorMessages = 'You are not authorized to do this.';
 				if(array_key_exists('message', $onCheck)){
 					$errorMessages = $onCheck['message'];
