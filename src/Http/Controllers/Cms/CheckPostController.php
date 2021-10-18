@@ -224,7 +224,7 @@ class CheckPostController extends CmsController
 
 		if(method_exists($postTypeModel, 'on_check_check')){
 			$onCheck = $postTypeModel->on_check_check($postTypeModel, $post->id, $postmeta);
-			if($onCheck['continue'] === false){
+			if(!empty($onCheck['continue']) && ( $onCheck['continue'] === false || !$onCheck['continue']) ){
 				$errorMessages = 'You are not authorized to do this.';
 				if(array_key_exists('message', $onCheck)){
 					$errorMessages = $onCheck['message'];
