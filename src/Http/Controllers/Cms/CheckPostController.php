@@ -212,7 +212,7 @@ class CheckPostController extends CmsController
 		}
 
 		$validatedFields = $this->validatePost($secondRequest, $post, $validationRules);
-		if($validatedFields['status'] === false){
+		if(isset($validatedFields['errors'])){
 			$errors = $validatedFields['errors'];
 			return (object) [
 				'code' => 'failure',
