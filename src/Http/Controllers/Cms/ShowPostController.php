@@ -131,7 +131,7 @@ class ShowPostController extends CmsController
 
 		if(method_exists($postTypeModel, 'on_show_check')){
 			$onShowCheck = $postTypeModel->on_show_check($postTypeModel, $post->id, $postmeta);
-			if($onShowCheck['continue'] === false){
+			if(!empty($onCheck['continue']) && ( $onCheck['continue'] === false || !$onCheck['continue']) ){
 				$errorMessages = 'You are not authorized to do this.';
 				if(array_key_exists('message', $onShowCheck)){
 					$errorMessages = $onShowCheck['message'];
